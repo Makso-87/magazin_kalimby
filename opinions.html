@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Радогория Арт</title>
+	<link rel="icon" href="logo_1.png" type="image/x-icon">
+	<link rel="stylesheet" href="CSS/style.css"> <!-- Основные стили сайта -->
+    <link rel="stylesheet" href="CSS/menu_style.css"> <!-- Стили для мобильного меню и адаптивность -->
+    <script src="JS/jquery-3.2.1.min.js"></script> <!-- Библиотека JQuery -->
+    <script src="JS/menu.js"></script> <!-- Меню для мобильных устройств -->
+    <script src="JS/chat.js"></script> <!-- Чат с консультантом от Chatra {literal} -->
+</head>
+<body>
+	<header>
+		<div class="head">	
+		<div class="head_fon">
+				<h1>Радогория <br /> Арт</h1>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="content opinions">
+			<!-- Верхний тулбар - меню навигации -->
+			<div class="row">
+				<div class="cols col-12">
+				<nav class="menu_box clearfix">
+					<ul id="list_main" class="menu clearfix">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="about_us.html">О нас</a></li>
+						<li class="catalog_button_normal"><a href="catalog.html">Каталог</a></li>
+						<!-- Меню "Каталог"для мобильной версии -->
+						<li id="hidden_menu" class="catalog_box_menu_mini"><a class="pull_2" href="#">Каталог</a>
+								<ul id="list_1">
+									<li><a href="kalimbes.html">Калимбы</a></li>
+									<li><a href="okarines.html">Окарины</a></li>
+									<li><a href="flutes.html">Флейты</a></li>
+									<li><a href="pimacs.html">Пимаки</a></li>
+									<li><a href="liras.html">Лиры</a></li>
+									<li><a href="catalog.html">Инструменты</a></li>
+								</ul>
+						</li> 
+						<li><a class="active" href="opinions.html">Отзывы</a></li>
+						<li><a href="news.html">Новости</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul> 
+					<a id="pull" href="#">Меню</a>
+				</nav>
+				</div>
+			</div>
+				<h2>Отзывы наших покупателей</h2>
+			<div class="row">
+			<div class="cols col-4">
+				<img class="img_general" src="image/main.jpg" alt="kalimba" width="300">
+			</div>		
+			<div class="cols col-8">
+				<div class="text_general">
+						<p>Здесь пока нет отзывов</p>
+					</div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<span>&copy;  Радогория Арт.  2017 г.</span>
+		<a href=""></a>
+	</footer>
+</body>
+</html>

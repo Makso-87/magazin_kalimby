@@ -1,0 +1,689 @@
+/*Общие правила для сайта*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: "Flavius";
+	src:url('../fonts/Flavius.ttf');
+
+}
+
+body {
+	font: 100%/1,5em;
+	background-image: url(../image/kalimby.jpg); /*Задаем адрес изображения фона*/
+	background-position: center center; /*Устанавливаем позицию фона, центрируем изображение по вертикали и горизонтали*/
+	background-repeat: no-repeat; /*Запрещаем повторение изображения*/
+	background-attachment: fixed; /*Фиксируем изображение, при про крутке сайта оно остается на месте*/
+	background-size: cover; /*Изображение будет масштабироваться в зависимости от размеров контейнера*/
+	background-color:#464646; /* Цвет фона изображения, который будет показываться пока изображение не загрузится */
+}
+
+
+h2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: "Trebuchet MS";
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*Приавила для гибкой медиа flexible media */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+/*--------------------------------------------------------------------------------------------------------*/
+/*Правила для адаптивной разметки сайта*/
+
+	.content .cols.col-1,
+	.content .cols.col-2,
+	.content .cols.col-3, 
+	.content .cols.col-4, 
+	.content .cols.col-5, 
+	.content .cols.col-6,
+	.content .cols.col-7,
+	.content .cols.col-8, 
+	.content .cols.col-9,
+	.content .cols.col-10,
+	.content .cols.col-11,
+	.content .cols.col-12 {width: 100%}
+/*Выстраивание стобцов один за другим, выстраивая в строки*/
+	.content .cols {
+	
+	float: left;
+}
+/*Постороение ровной сетки без сдвигов, выставление  */
+.content:before,
+.content:after,
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+/*Очищение от свойства float чтобы стобцы не съезжали*/
+.content:after,
+.row:after {
+	clear: both;
+}	
+/*--------------------------------------------------------------------------------------------------------*/
+
+/*Правила для "шапки"*/
+.head {
+	width: 80%;
+	height: 100px;
+	margin: 0 auto;
+	background-image: url(../image/head_1.jpg);
+	background-color: rgba(0,0,0, 0.5);
+	background-position: center center; /*Устанавливаем позицию фона, центрируем изображение по вертикали и горизонтали*/
+	background-repeat: no-repeat; /*Запрещаем повторение изображения*/
+	background-size: cover; /*Изображение будет масштабироваться в зависимости от размеров контейнера*/
+	background-color:#464646;  /* Цвет фона изображения, который будет показываться пока изображение не загрузится  */
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	border-bottom-width: 1px;
+	box-shadow: 0 0 5px 3px;
+}
+
+.head_fon {
+	width: 100%;
+	background-color: rgba(0,0,0, 0.3);
+	height: 100px;
+}
+
+.head h1 {
+	font-family: "Flavius";
+	margin-left: 2%;
+	color: #f7dda2;
+	padding-top: 0.1em;
+	line-height: 1em;
+	font-size: 2.5em;
+	letter-spacing: 0.3em;
+	float: left;
+}
+
+.head span {
+	position: relative;
+	background: url(../image/telefon.png) no-repeat;
+	background-position: 79%;
+	text-indent: 80px;
+	height: 30px;
+	display: block;
+	text-align: right;
+	color: #f7dda2;
+	font-size: 1.5em;
+	font-family: "Trebuchet MS";
+	top: 50px;
+	padding-left: 40px;
+	padding-right: 20px;
+	z-index: 100;
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+/*Правила для контента*/
+.content {
+	width: 80%; 
+	color: #57272a;
+	margin: 0 auto;
+	background-image: url(../image/paper.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	box-shadow: 0px 0px 5px 3px black;
+}
+
+.content_catalog {
+	width: 100%;
+	color: #57272a;
+}
+
+.content_block_catalog {
+	width: 100%;
+	background-image: url(../image/paper.jpg);
+	background-position: center center;
+	background-repeat: repeat;
+	box-shadow: 0px 5px 5px 3px black;
+}
+
+.content_block {
+	width: 80%;
+	background-image: url(../image/paper.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	box-shadow: 0px 5px 5px 3px black;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+/*Правила для главной старницы*/
+.img_general {
+	display: block;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 2px;
+	margin: 20px 30px 30px;
+}
+
+.text_general p {
+	font-family: "Trebuchet MS";
+	font-size: 20px;
+	text-indent: 50px;
+	padding: 10px 20px 20px 20px;
+	
+	
+}
+
+figure {
+	text-align: center;
+}
+/*--------------------------------------------------------------------------------------------------------*/
+
+/*Правила для старницы "О нас"*/
+.img_about_us {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 50%;
+	box-shadow: 0px 0px 3px 2px;
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-bottom: 30px;
+	margin-right: 30px;
+	float: left;
+}
+
+.text_about_us_1 {
+	font-family: "Trebuchet MS";
+	font-size: 20px;
+	text-indent: 50px;
+	margin-top: 40px;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+.text_about_us_2 {
+	font-family: "Trebuchet MS";
+	font-size: 20px;
+	text-indent: 50px;
+	margin-top: 40px;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+.text_about_us_3 {
+	font-family: "Trebuchet MS";
+	font-size: 20px;
+	text-indent: 50px;
+	margin-top: 70px;
+	margin-right: 30px;
+	margin-left: 30px;
+	padding-bottom: 20px;
+}
+
+.clear {
+	clear: left;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+/*Правила для меню страницы "Каталог"*/
+.catalog_box_left {
+	
+	width: 200px;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #e00000;
+	margin-left: 30px;
+	box-shadow: 2px 2px 3px 1px;
+	float: left;
+
+}
+.catalog_box_left ul {
+	list-style: none;
+
+}
+.catalog_box_left a {
+	display: block;
+	font-family: "Trebuchet MS";
+	font-size: 22px;
+	text-decoration: none;
+	text-align: center;
+	color: #401b1b;
+	
+	background: rgb(252,218,188); /* Для старых браузеров */
+background: -moz-linear-gradient(top,  rgba(252,218,188,1) 0%, rgba(252,162,78,1) 50%, rgba(248,120,0,1) 51%, rgba(251,197,147,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(252,218,188,1) 0%,rgba(252,162,78,1) 50%,rgba(248,120,0,1) 51%,rgba(251,197,147,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(252,218,188,1) 0%,rgba(252,162,78,1) 50%,rgba(248,120,0,1) 51%,rgba(251,197,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcdabc', endColorstr='#fbc593',GradientType=0 ); /* IE6-9 */
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 55px;
+	padding-right: 55px;
+	border-bottom: 1px solid #401b1b;
+}
+
+.catalog_box_left a:hover {
+	background: rgb(254,204,177); /* Для старых браузеров */
+background: -webkit-linear-gradient(rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(224,0,0,1) 100%);
+background: -o-linear-gradient(rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(224,0,0,1) 100%);
+background: linear-gradient(rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(224,0,0,1) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#e00000',GradientType=0 ); /* IE6-9 */
+
+	color: #f9dda2;
+	border-bottom: 1px solid #401b1b;
+	box-shadow: 0 0 0px 0px #401b1b inset;
+}
+
+.catalog_box_left li a.active_box_left {
+
+	background: rgb(254,204,177); /* Для старых браузеров */
+background: -webkit-linear-gradient(rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(224,0,0,1) 100%);
+background: -o-linear-gradient(rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(224,0,0,1) 100%);
+background: linear-gradient(rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(224,0,0,1) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#e00000',GradientType=0 ); /* IE6-9 */
+
+	color: #f9dda2;
+	border-bottom: 1px solid #401b1b;
+	box-shadow: 0 0 0px 0px #401b1b inset;
+}
+
+.catalog_box_menu_mini,
+.catalog_box_menu_mini ul,
+.catalog_box_menu_mini li,
+.catalog_box_menu_mini a {
+	display: none;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+/*Правила для контента старницы "Каталог"*/
+
+.instrum h3 {
+	margin-bottom: 20px;
+	font-family: "Trebuchet MS";
+	text-align: center;
+}
+
+.instrum p {
+	font-family: "Trebuchet MS";
+	font-size: 20px;
+	text-indent: 50px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+}
+.instrum img {
+	margin-bottom: 10px;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*Правила для старниц с видами товаров*/
+.tovar {
+	width: 260px;
+	margin-bottom: 20px;
+	margin-left: 50px;
+	border-width: 1px;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 0 2px 0px inset;
+	float: left;
+}
+
+.tovar figure {
+	text-align: center;
+
+}
+.tovar_text {
+	text-align: center;
+	font-family: "Trebuchet MS";
+	font-size: 19px;
+}
+
+.tovar img {
+	margin: auto;
+}
+
+.tovar ul {
+	margin-top: 15px;
+}
+
+.tovar li {
+	list-style-type: none;
+	display: inline;
+	font-family: 'Trebuchet MS';
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.tovar_link {
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	color: #401b1b;
+background: rgb(252,218,188); /* Для старых браузеров */
+background: -moz-linear-gradient(top,  rgba(252,218,188,1) 0%, rgba(252,162,78,1) 50%, rgba(248,120,0,1) 51%, rgba(251,197,147,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(252,218,188,1) 0%,rgba(252,162,78,1) 50%,rgba(248,120,0,1) 51%,rgba(251,197,147,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(252,218,188,1) 0%,rgba(252,162,78,1) 50%,rgba(248,120,0,1) 51%,rgba(251,197,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcdabc', endColorstr='#fbc593',GradientType=0 ); /* IE6-9 */
+
+	margin-left: 7px;
+	margin-right: 7px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 8px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	box-shadow: 1px 1px 2px 0px;
+	text-shadow: 1px 1px 1px #ddfeed;
+}
+
+.tovar_link:hover {
+background: rgb(254,204,177); /* Для старых браузеров */
+background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(224,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(224,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(224,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#e00000',GradientType=0 ); /* IE6-9 */
+
+	color: #f9dda2;
+	box-shadow: 1px 1px 2px 0px #401b1b;
+	text-shadow: 1px 1px 1px #401b1b;
+}
+
+.tovar_link:active {
+
+background: rgb(254,204,177); /* Для старых браузеров */
+background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(224,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(224,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(224,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#e00000',GradientType=0 ); /* IE6-9 */
+
+	color: #f9dda2;
+	border-bottom: 1px solid #401b1b;
+	box-shadow: 0px 0px 5px 1px #401b1b inset;
+	padding: 8px 9px 6px 11px;
+	top: 2px;
+	left: 2px;
+}
+
+
+.tovar_img_cont {
+	width: 210px;
+	height: 210px;
+	margin-right: 30px;
+	margin-left: 13px;
+	text-align: center;
+}
+
+.tovar_link_img {
+	text-decoration: none;
+	color: rgba(64,27,27, 0.5);
+}
+
+.tovar img:hover {
+	transform: scale(1.1,1.1);
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+/*Правила для странц с отдельным товаром*/
+.tovar_podrobno {
+	width: 90%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-width: 1px;
+	border-radius: 10px;
+	padding: 5px 5% 5px;
+}
+
+.tovar_img_podrobno img {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.tovar_podrobno ul {
+	display: block;
+	width: 100%;
+	margin: 30px auto 0px;
+	list-style-type: none;
+	font-family: 'Trebuchet MS';
+	font-size: 20px;
+	float: left;
+}
+.tovar_param {
+	display: block;
+	width: 100%;
+	float: left;
+}
+.tovar_podrobno li {
+	margin: 0 0 5px 0;
+}
+
+.tovar_podrobno p {
+	margin: 45px 0 20px 0px;
+	text-indent: 50px;
+	font-family: 'Trebuchet MS';
+	font-size: 20px;
+}
+
+.buy {
+	margin: 30px auto 0px;
+	font-family: 'Arial';
+	
+	color: red;
+	display: block;
+	padding: 20px 20px 20px 20px;
+	width: 150px;
+	height: 100px;
+	text-align: center;
+	border-width: 1px;
+	border-radius: 8px;
+	border-color: #401b1b;
+}
+
+.buy span, a {
+	padding: 7px 20px 7px 20px;
+}
+
+.buy span {
+	text-shadow: 1px 1px 1px black;
+	font-size: 30px;
+}
+
+.buy a {
+	position: relative;
+	text-decoration: none;
+background: rgb(254,204,177); /* Для старых браузеров */
+background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(224,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(224,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(224,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#e00000',GradientType=0 ); /* IE6-9 */
+	font-size: 22px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 8px;
+	border-color: #e00000;
+	box-shadow: 1px 1px 3px 0 #401b1b;
+	text-shadow: 0 -1px 1px #777;
+	color: #fff;
+}
+
+.buy a:hover {
+	text-decoration: none;
+background: rgb(254,204,177); /* Для старых браузеров */
+background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(224,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(224,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(224,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#e00000',GradientType=0 ); /* IE6-9 */
+	font-size: 22px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 8px;
+	box-shadow: 1px 1px 3px 0px #401b1b, 0 0 0 60px rgba(0,0,0, 0.05) inset;
+	text-shadow: 0 -1px 1px #777;
+	border-color: #e00000;
+	color: #fff;
+}
+
+.buy a:active {
+	text-decoration: none;
+background: rgb(254,204,177); /* Для старых браузеров */
+background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(224,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(224,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(224,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#e00000',GradientType=0 ); /* IE6-9 */
+	font-size: 22px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 9px;
+	box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+	border-color: #e00000;
+	color: #fff;
+	padding: 8px 19px 6px 21px;
+	top: 2px;
+	left: 2px;
+}
+/*--------------------------------------------------------------------------------------------------------*/
+
+/*Правила для правой части контента*/
+
+.catalog_right_side figure {
+	width: 100%;
+	text-align: center;
+}
+
+.catalog_right_side h2 {
+	text-align: center;
+	font-family: "Trebuchet MS";
+}
+
+.catalog_right_side img {
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	border-color: black;
+	box-shadow: 0 0 5px 2px;
+	margin: 0 15px 15px 15px;
+	float: left;
+
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+/*Правила для страниыцы "Контакты*/
+.content.contacts {
+	height: 45em;
+}
+.img_contacts {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 2px;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	margin-right: 30px;
+	float: left;
+}
+
+.header_contacts {
+	font-family: "Trebuchet MS";
+	text-align: center;
+	margin-top: 20px;
+}
+
+.text_contacts {
+	height: 300px;
+	margin-top: 50px;
+}
+
+.text_contacts p {
+	font-family: "Trebuchet MS";
+	font-size: 20px;
+	margin-top: 15px;
+	padding: 0px 20px 0px 20px;
+}
+
+.text_contacts img {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.text_contacts img:hover {
+	top: -3px;
+	left: -3px;
+	width: 56px;
+	height: 56px;
+}
+
+/*Правила для страницы "Отзывы"*/
+.content.opinions {
+	height: 35em;
+}
+
+.content.news {
+		height: 35em;
+}
+/*--------------------------------------------------------------------------------------------------------*/
+
+/*Правила для подвала*/
+footer {
+	width: 80%;
+	margin: 0 auto;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: black;
+	line-height: 40px;
+	background-color: #401b1b;
+	text-align: center;
+	box-shadow: 0px 5px 5px 3px black;
+
+}
+
+footer span {
+	text-align: center;
+	color: #fff;
+	font-family: 'Trebuchet MS';
+	font-weight: 14px;
+}
+/* Адаптивность страниц */
+@media screen and (min-width: 600px) {
+	.content .cols.col-1 {width: 8.333333%}
+	.content .cols.col-2 {width: 16.666666%}
+	.content .cols.col-3 {width: 25%}
+	.content .cols.col-4 {width: 33.33333%}
+	.content .cols.col-5 {width: 41.666666%}
+	.content .cols.col-6 {width: 50%}
+	.content .cols.col-7 {width: 58.333333%}
+	.content .cols.col-8 {width: 66.666666%}
+	.content .cols.col-9 {width: 75%}
+	.content .cols.col-10 {width: 83.333333%}
+	.content .cols.col-11 {width: 91.666666%}
+	.content .cols.col-12 {width: 100%}
+	.img_general source { 
+	display: none;
+	}
+}
+
